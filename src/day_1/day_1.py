@@ -41,7 +41,7 @@ def find_number_part_2(line: str, is_reversed: bool = False) -> str:
 
 def calibrate(calibration_document: str, find_number) -> int:
     values = []
-    for line in calibration_document.splitlines():
+    for line in calibration_document.strip().splitlines():
         first = find_number(line.strip())
         last = find_number(line.strip()[::-1], True)
         values.append(int(f"{first}{last}"))
