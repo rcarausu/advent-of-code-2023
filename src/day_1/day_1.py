@@ -49,7 +49,7 @@ def calibrate(calibration_document: str, find_number) -> int:
 
 
 if __name__ == '__main__':
-    with open("input.txt", 'r') as file:
+    with open("day_1_input.txt", 'r') as file:
         text = file.read()
         print(calibrate(text, find_number_part_1))
         print(calibrate(text, find_number_part_2))
